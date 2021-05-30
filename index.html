@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>SurveyForm</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+  <body>
+    <header>
+    <h1 id="title">
+      Encuesta de Distribución Colaborativa
+    </h1>
+      <shape></shape>
+    <p id="description">
+      La distribución colaborativa se trata de un método de distribución en el que cualquier persona puede realizar tareas de producción y logística de productos alimenticios mediante reservas.  
+    </p>
+      </header>
+       
+    <form id="survey-form" action="#">
+    <fieldset>
+        <legend>Datos personales</legend>
+      <label id="name-label" for="name">¿Cuál es su nombre?</label>
+      <input id="name" name="name" type="text" placeholder="Alan" required>
+       <label for="email" id="email-label">¿Cuál es su email?</label>
+      <input id="email" name="email" type="email" placeholder="Alan@ejemplo.es" required>
+   <label id="number-label" for="number">¿Cuál es su edad?</label>
+      <input id="number" min=1 max=200 name="age" type="number" placeholder="45" > 
+    </fieldset>
+      
+        <p>Una de las ventajas de la distribución colaborativa es saber el origen de los alimentos, contestando preguntas como ¿de dónde provienen los alimentos que me estoy comiendo? </P>  
+      <label for="dropdown">¿Estás interesado en conocer el origen de la comida?:</label>
+  <select id="dropdown" name="interest">
+    <option name="interest" value="careless">Me da igual el origen de la comida.</option>
+    <option name="interest" value="somehowInterested">Estoy algo interesado en el origen de la comida.</option>
+    <option name="interest" value="veryInterested">Estoy muy interesado saber más acerca del origen de los alimentos y creo que sería interesante.</option>
+    <option name="interest" value="none">Ninguna de las anteriores</option>
+  </select>
+    
+      
+       <fieldset>
+        <legend>¿Tienes coche?</legend>
+        <div>
+      <input id="yes-car" name="car" type="radio" value="yes"> 
+      <label for="yes-car">Si, tengo coche.</label>
+      </div><div>
+      <input id="no-car" name="car" type="radio" value="no"> 
+         <label for="no-car">No, no tengo coche.</label></div>
+        
+      </fieldset>
+    
+    <fieldset>
+        <legend>¿Estarías dispuesto a depositar el valor equivalente de la mercancía transportada o almacenada durante la duración del servicio?</legend>
+        <div>
+      <input id="deposit-yes" name="deposit" type="radio" value="yes"> 
+      <label for="deposit-yes">Si, entiendo que es por seguridad para el cliente.</label>
+      </div><div>
+      <input id="deposit-no" name="deposit" type="radio" value="no"> 
+         <label for="deposit-no">No, no depositaría.</label>
+         </div> 
+      <div>
+      <input id="maybe-deposit" name="deposit" type="radio" value="maybe"> 
+         <label for="maybe-deposit">Puede ser, siempre y cuando esté seguro de que mi depósito esté asegurado.</label>
+         </div> 
+      </fieldset>
+      
+      <fieldset>
+        <legend>¿Estás realizando o estarías dispuesto a realizar alguna de las siguientes tareas?</legend>
+        <div>
+      <input id="farmer" name="which-roles" type="checkbox" value="farmer"> 
+      <label for="farmer">Cultivar comida en el campo.</label>
+      </div><div>
+      <input id="transporter" name="which-roles" type="checkbox" value="transporter"> 
+      <label for="transporter">Transportar comida del campo a la ciudad.</label>
+        </div><div>
+      <input id="keeper" name="which-roles" type="checkbox" value="keeper"> 
+      <label for="keeper">Almacenar pedidos en la ciudad hasta que los clientes lo recojan.</label>
+        </div><div>
+      <input id="consumer" name="which-roles" type="checkbox" value="consumer"> 
+      <label for="consumer">Consumir comida fresca, recién recogida del campo.</label>
+        </div>
+      </fieldset>
+      
+    
+      <textarea name="comment" form="survey-form">¿Algún comentario adicional?</textarea>
+      <button id="submit" type="submit"> 
+      Enviar</button>
+    </form>
+ 
+    </body>
+  </html>
+  

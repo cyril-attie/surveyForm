@@ -1,0 +1,47 @@
+html {
+  font-family:arial;
+}
+
+form {
+  display:grid;
+  grid-template-columns:70%;
+  grid-row-gap:10px;
+  
+}
+fieldset {
+  display:flex;
+  flex-direction:column;
+  grid-row-gap:10px;
+}
+body {
+  background:linear-gradient(180deg,#87ceeb,green);
+ padding: 10%
+}
+shape {
+  position:absolute;
+  right:10%;
+  top:10%;
+  border-radius:50%;
+  width:80px;
+  height:80px;
+  background-color:yellow;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+  padding:2% 15%;
+}
+
+textarea {
+  height:100px;
+}
+
+h1 {
+  padding:3% 0%;
+  text-align: center;
+}
+#description {
+  padding:30px 16%;
+  text-align: center;
+}
